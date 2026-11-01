@@ -1,4 +1,8 @@
-const { filterSkillsByCategory, calculateTotalCost } = require('../skillswap-functions');
+const {
+  filterSkillsByCategory,
+  calculateTotalCost,
+  matchSkillsToUser
+} = require('../skillswap-functions');
 
 describe('filterSkillsByCategory function', () => {
     const skills = [
@@ -43,4 +47,37 @@ describe('calculateTotalCost function', () => {
     test('should handle decimal hours correctly', () => {
         expect(calculateTotalCost(25, 1.5)).toBe(37.5);
     });
+});
+
+describe('matchSkillsToUser function', () => {
+  const skills = [
+    { title: 'Python Tutoring', category: 'Programming', price: 20 },
+    { title: 'Guitar Lessons', category: 'Music', price: 15 },
+    { title: 'Resume Review', category: 'Career', price: 0 },
+    { title: 'Web Development', category: 'Programming', price: 25 }
+  ];
+
+  test('should return skills matching the category and max price', () => {
+    const userNeeds = {
+      category: 'Programming',
+      maxPrice: 20
+    };
+
+    const result = matchSkillsToUser(userNeeds, skills);
+
+    expect(result).toEqual([
+      { title: 'Python Tutoring', category: 'Programming', price: 20 }
+    ]);
+  });
+
+  test('should return an empty array when no skills match', () => {
+    const userNeeds = {
+      category: 'Programming',
+      maxPrice: 10
+    };
+
+    const result = matchSkillsToUser(userNeeds, skills);
+
+    expect(result).toEqual([]);
+  });
 });
