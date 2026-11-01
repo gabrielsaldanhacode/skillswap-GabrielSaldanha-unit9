@@ -1,0 +1,78 @@
+<!-- Main Content: Skill Cards Grid -->
+  <main class="main-content">
+    <section id="explore">
+      <div class="section-header">
+        <h2>Explore Skills</h2>
+        <p>Connect with peers offering hands-on mentorship and collaboration.</p>
+      </div>
+      
+      <div class="filter-container">
+  <button class="filter-btn" data-category="All">All</button>
+  <button class="filter-btn" data-category="Programming">Programming</button>
+  <button class="filter-btn" data-category="Music">Music</button>
+  <button class="filter-btn" data-category="Career">Career</button>
+</div>
+
+<section class="calculator-section">
+  <h2>Session Cost Calculator</h2>
+  <form id="cost-calculator-form">
+    <div class="form-group">
+      <label for="hourly-rate">Hourly Rate ($):</label>
+      <input type="number" id="hourly-rate" min="0" step="0.01" placeholder="e.g. 25" required>
+    </div>
+    <div class="form-group">
+      <label for="session-hours">Hours Needed:</label>
+      <input type="number" id="session-hours" min="0" step="0.5" placeholder="e.g. 1.5" required>
+    </div>
+    <button type="submit" id="calculate-btn">Calculate Total Cost</button>
+  </form>
+  <div id="cost-result" class="result-display"></div>
+</section>
+
+      <div class="skills-grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <span class="category-badge">Technology</span>
+          <h3>Intro to Python & Git</h3>
+          <p class="description">Learn repository version control, branching strategies, and basic scripting fundamentals.</p>
+          <div class="card-footer">
+            <span class="offered-by">Offered by: Alex M.</span>
+            <button class="btn-swap">Request Swap</button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <span class="category-badge">Design</span>
+          <h3>UI/UX Wireframing</h3>
+          <p class="description">Master user journey mapping, low-fidelity wireframes, and design layout principles.</p>
+          <div class="card-footer">
+            <span class="offered-by">Offered by: Jordan K.</span>
+            <button class="btn-swap">Request Swap</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <span class="category-badge">Athletics</span>
+          <h3>Athletic Conditioning & Agility</h3>
+          <p class="description">High-intensity drill planning, footwork mechanics, and structured weekly workout routines.</p>
+          <div class="card-footer">
+            <span class="offered-by">Offered by: Marcus T.</span>
+            <button class="btn-swap">Request Swap</button>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <span class="category-badge">Academics</span>
+          <h3>College Calculus & Proofs</h3>
+          <p class="description">Step-by-step problem breakdown, derivatives, integration techniques, and exam prep.</p>
+          <div class="card-footer">
+            <span class="offered-by">Offered by: Sarah L.</span>
+            <button class="btn-swap">Request Swap</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>

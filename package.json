@@ -1,0 +1,24 @@
+{
+  "name": "skillswap-gabrielsaldanha-unit8",
+  "version": "1.0.0",
+  "description": "This repository hosts my Skill Swap homepage project where I'm practicing professional Git workflows and repository management. Throughout this project, I'm building out the core landing page (including layout, navigation, styling, and interactive skill cards) while using pull requests to review, document, and merge major updates the codebase",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielsaldanhacode/skillswap-GabrielSaldanha-unit8.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gabrielsaldanhacode/skillswap-GabrielSaldanha-unit8/issues"
+  },
+  "homepage": "https://github.com/gabrielsaldanhacode/skillswap-GabrielSaldanha-unit8#readme",
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
